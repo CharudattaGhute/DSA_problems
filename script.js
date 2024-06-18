@@ -14,3 +14,7 @@ function set() {
   }
   document.getElementById("output").innerHTML = data;
 }
+
+let items = [1, 6, 5, 4, 3, 2, 8];
+items.splice(6, 0, 2000);
+console.log(items);

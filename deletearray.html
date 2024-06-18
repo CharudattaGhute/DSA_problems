@@ -8,18 +8,26 @@
 </head>
 
 <body>
+    <input type="text" placeholder="enter the element">
 
 </body>
 <script>
-    let arr = [10, 20, 30, 40, 50, 60]
-    let position = 2
-    for (let i = position; i < arr.length - 1; i++) {
-        arr[i] = arr[i + 1]
+    // let arr = [10, 20, 30, 40, 50, 60]
+    // let position = 2
+    // for (let i = position; i < arr.length - 1; i++) {
+    //     arr[i] = arr[i + 1]
 
 
+    // }
+    // arr.length = arr.length - 1
+    // console.warn(arr)
+
+    let data = [90, 80, 70, 60, 50, 40, 30, 20]
+    let pos = 7;
+    for (let i = pos; i <= data.length; i++) {
+        data[i + 1] = data[i]
+        console.warn(data)
     }
-    arr.length = arr.length - 1
-    console.warn(arr)
 </script>
 
 </html>
