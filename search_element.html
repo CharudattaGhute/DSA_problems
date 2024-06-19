@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Element from array</title>
+</head>
+
+<body>
+    <input id="element" placeholder="Enter the elemnt">
+    <div id="output"></div>
+    <button onclick="search()">Search</button>
+
+</body>
+<script>
+    function search() {
+        let arr = [10, 20, 30, 40, 50, 60, 70]
+        let searchel = document.getElementById("element").value
+        let index = undefined
+        for (let i = 0; i < arr.length - 1; i++) {
+            if (arr[i] === searchel) {
+                index = i
+                break
+            }
+            document.getElementById("output").innerHTML = arr.indexOf(searchel)
+
+        }
+    }
+
+</script>
+
+</html>
